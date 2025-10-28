@@ -31,12 +31,12 @@ int main() {
 
     for (int i = 0; i < num1; i++) {
         cin >> schedule[i].trainName 
-                 >> str1 
-                 >> str1 
-                 >> str1 
-                 >> schedule[i].destination 
-                 >> str1 
-                 >> schedule[i].time;
+            >> str1 
+            >> str1 
+            >> str1 
+            >> schedule[i].destination 
+            >> str1 
+            >> schedule[i].time;
 
         schedule[i].idx = i;
     }
