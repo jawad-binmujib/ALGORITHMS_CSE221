@@ -6,8 +6,7 @@ int main(){
 
 
 
-
-
+// incomplete code
 
 
     return 0;
