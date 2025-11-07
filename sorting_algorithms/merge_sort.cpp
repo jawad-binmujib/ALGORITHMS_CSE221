@@ -55,7 +55,6 @@ int merge_sort(vector<int> &arr1, int left, int right){
     merge(arr1, left, mid, right);
     return 0;
 }
-
 int main(){
     int length;
     cin >> length;
