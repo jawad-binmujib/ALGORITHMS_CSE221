@@ -15,7 +15,7 @@ int main(){
         while (j >= 0 && arr1[j] > key)
         {
             arr1[j +1] = arr1[j];
-            j-= 1;
+            j--;
         }
         arr1[j + 1] = key;
         
