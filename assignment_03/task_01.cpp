@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-long long merge(vector<int>& arr1, int left, int mid, int right) {
+long long merge(vector<int>&arr1, int left, int mid, int right) {
 
     int length1 = mid - left + 1;
     int length2 = right - mid;
