@@ -9,12 +9,12 @@ int main() {
     for (int i = 0 ; i < test_cases; i++) {
         int length; 
         cin >> length;
-        vector<int> arr1;
+        vector<int> arr1(length);
 
-        for (int i = 1; i <= length; i ++) {
+        for (int i = 0; i < length; i ++) {
             int elem;
             cin >> elem;
-            arr1.push_back(elem);
+            arr1[i] = elem;
         }
         bool isAssend = true;
         for (int i = 0; i < length - 1; i ++) {
