@@ -13,7 +13,7 @@ int main(){
         for (int i = 0 ; i< length; i++){
             int elem;
             cin >> elem;
-            arr1[i] = elem;
+            arr1[i] = elem; 
         }
         bool isPalindrome = true;
         for (int i = 0; i < length / 2; i ++){
