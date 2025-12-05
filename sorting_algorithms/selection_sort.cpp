@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-int selection_sort(vector<int> &arr1, int length){
+void selection_sort(vector<int> &arr1, int length){
     for (int i = 0; i < length -1; i++){
         int min_idx = i;
         for (int j = i +1; j < length; j ++){
