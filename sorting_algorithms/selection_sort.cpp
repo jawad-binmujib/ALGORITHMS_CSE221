@@ -12,7 +12,7 @@ void selection_sort(vector<int> &arr1, int length){
         }
         swap(arr1[i], arr1[min_idx]);
     }
-    return 0;
+    return;
 }
 int main(){
     int length;
