@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-int bubble_sort(vector<int> &arr1, int length){
+void bubble_sort(vector<int> &arr1, int length){
     for (int i =0; i < length; i++){
         for (int j = 0 ; j < length; j++ ){
             if (arr1[j] > arr1[j +1]){
