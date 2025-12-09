@@ -5,7 +5,7 @@
 using namespace std;
 const int max_num = 200005; 
 vector<int>adj[max_num];
-bool visited_array[max_num];
+vector<bool> visited_array(max_num, false);
 int color[max_num];
 
 int counter1 = 0;
