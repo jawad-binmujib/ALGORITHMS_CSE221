@@ -10,6 +10,8 @@ int dist[max_num];
 
 int main() {
 
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int n, m, s, q_queries;
     if (!(cin >> n >> m >> s >> q_queries))
         return 0;
