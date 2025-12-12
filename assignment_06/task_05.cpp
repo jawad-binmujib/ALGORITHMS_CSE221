@@ -11,7 +11,7 @@ int dist[max_num];
 int main() {
 
     int n, m, s, q_queries;
-    if (!(cin >> n >> m >> s >> q_queries)) 
+    if (!(cin >> n >> m >> s >> q_queries))
         return 0;
 
     for (int i = 0; i < m; i++) {
