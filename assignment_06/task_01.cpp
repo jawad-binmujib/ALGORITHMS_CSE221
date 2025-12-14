@@ -20,7 +20,8 @@ int main(){
     }
     queue<int> q;
     for (int i= 1; i <= course; i++){
-        if (in_degree[i] == 0)  q.push(i);
+        if (in_degree[i] == 0)  
+            q.push(i);
     
 
     }
