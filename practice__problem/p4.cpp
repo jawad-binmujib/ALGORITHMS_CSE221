@@ -16,6 +16,7 @@ void solve(){
     }
     cout << max_val << endl;
 }
+
 int main(){
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
