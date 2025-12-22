@@ -3,22 +3,26 @@
 #include<queue>
 using namespace std;
 
-const long long inf = 1e18;
 
+const long long inf = 1e18;
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int N, M, S, D;
-    if (!(cin >> N >> M >> S >> D)) return 0;
+    if (!(cin >> N >> M >> S >> D))
+        return 0;
 
     vector<vector<pair<int, int>>> adj_list(N + 1);
     for (int i = 0; i < M; i++) {
+        
         int u, v, w;
         cin >> u >> v >> w;
         adj_list[u].push_back({w, v});
         adj_list[v].push_back({w, u});
+
     }
+
 
     vector<vector<long long>> distance(N + 1, vector<long long>(2, inf));
     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
@@ -34,6 +38,7 @@ int main() {
         if (d > distance[u][1]) continue;
 
         for (auto it : adj_list[u]) {
+            
             int weight = it.first;
             int v = it.second;
             long long new_distance = d + weight;
@@ -52,6 +57,7 @@ int main() {
         }
     }
 
+
     if (distance[D][1] == inf){
         cout << -1 << endl;
     }
@@ -60,4 +66,5 @@ int main() {
         cout << distance[D][1] << endl;
 
     return 0;
+    
 }
