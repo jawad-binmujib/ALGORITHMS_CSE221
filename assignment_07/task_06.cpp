@@ -10,8 +10,7 @@ int main() {
     cin.tie(NULL);
 
     int N, M, S, D;
-    if (!(cin >> N >> M >> S >> D))
-        return 0;
+    if (!(cin >> N >> M >> S >> D)) return 0;
 
     vector<vector<pair<int, int>>> adj_list(N + 1);
     for (int i = 0; i < M; i++) {
